@@ -1,4 +1,3 @@
 package entity
 
-class ContactEntity {
-}
+class ContactEntity(var name: String, var phone: String)

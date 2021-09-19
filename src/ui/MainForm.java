@@ -1,15 +1,21 @@
 package ui;
 
+import business.ContactBusiness;
+import entity.ContactEntity;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.List;
 
 public class MainForm extends JFrame {
     private JPanel rootPanel;
     private JButton buttonNewContact;
     private JButton buttonRemove;
     private JTable tableContacts;
+
+    private ContactBusiness mContactBusiness;
 
     public MainForm(){
 
@@ -26,8 +32,16 @@ public class MainForm extends JFrame {
         //função para parar o programa ao sair
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
+        mContactBusiness = new ContactBusiness();
+
         setListenners();
+        loadContacts();
     }
+
+        private void loadContacts(){
+           List<ContactEntity> contactlist = mContactBusiness.getList();
+        }
+
 
     private void setListenners(){
         buttonNewContact.addActionListener(new ActionListener(){
