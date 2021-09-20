@@ -1,49 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui.MainForm">
-  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="7" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="10" left="10" bottom="10" right="10"/>
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-13551823"/>
+    </properties>
     <border type="none"/>
     <children>
       <component id="8e098" class="javax.swing.JButton" binding="buttonNewContact">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <background color="-10700708"/>
+          <font swing-font="DesktopIcon.font"/>
+          <foreground color="-788500"/>
           <text value="Novo Contato"/>
         </properties>
       </component>
-      <component id="1ea8e" class="javax.swing.JButton" binding="buttonRemove">
+      <component id="a5ec5" class="javax.swing.JLabel" binding="labelContactCount">
         <constraints>
-          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Remover"/>
+          <background color="-13988194"/>
+          <font swing-font="MenuBar.font"/>
+          <foreground color="-788500"/>
+          <text value="Label"/>
         </properties>
       </component>
-      <component id="a5ec5" class="javax.swing.JLabel">
+      <component id="4ce4a" class="javax.swing.JTable" binding="tableContacts">
         <constraints>
-          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="0" row-span="1" col-span="5" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
         </constraints>
         <properties>
-          <text value="Label"/>
+          <background color="-855564"/>
+          <enabled value="true"/>
+          <fillsViewportHeight value="true"/>
+          <focusable value="true"/>
+          <font name="Lucida Sans Typewriter" size="12" style="1"/>
+          <gridColor color="-4736582"/>
+          <inheritsPopupMenu value="false"/>
         </properties>
       </component>
       <hspacer id="389ef">
         <constraints>
-          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="3" row-span="2" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
       </hspacer>
-      <component id="4ce4a" class="javax.swing.JTable" binding="tableContacts">
+      <vspacer id="c81b1">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
-          </grid>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+      </vspacer>
+      <vspacer id="59fed">
+        <constraints>
+          <grid row="2" column="2" row-span="2" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <hspacer id="e7f88">
+        <constraints>
+          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="531c1" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="14" style="2"/>
+          <foreground color="-788500"/>
+          <text value="GitHub: G-ars"/>
+        </properties>
+      </component>
+      <grid id="69d72" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="5" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-13551823"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="194fc" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Copperplate Gothic Bold" size="14"/>
+              <foreground color="-788500"/>
+              <text value="Lista de Contatos"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <vspacer id="43f55">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="1ea8e" class="javax.swing.JButton" binding="buttonRemove">
+        <constraints>
+          <grid row="2" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5816260"/>
+          <font swing-font="DesktopIcon.font"/>
+          <foreground color="-788500"/>
+          <hideActionText value="false"/>
+          <text value="Remover"/>
+        </properties>
       </component>
     </children>
   </grid>
